@@ -1,0 +1,1 @@
+function r(t,S="YYYY-MM-DD HH:mm:ss"){let o=t.getFullYear(),s=String(t.getMonth()+1).padStart(2,"0"),e=String(t.getDate()).padStart(2,"0"),a=String(t.getHours()).padStart(2,"0"),g=String(t.getMinutes()).padStart(2,"0"),i=String(t.getSeconds()).padStart(2,"0");return`${o}-${s}-${e} ${a}:${g}:${i}`}var n=class extends Date{toString(){return r(this)}};export{r as a,n as b};
