@@ -1,0 +1,6 @@
+var i=class{constructor(e,t=40){this.size=t;this.container=e||document.body}spinnerElement=null;container;show(){if(this.spinnerElement)return;let e=document.createElement("div");e.style.position=this.container===document.body?"fixed":"absolute",e.style.top="0",e.style.left="0",e.style.width="100%",e.style.height="100%",e.style.backgroundColor="rgba(255, 255, 255, 0.6)",e.style.display="flex",e.style.alignItems="center",e.style.justifyContent="center",e.style.zIndex="9999",e.style.pointerEvents="auto";let t=document.createElement("div");t.style.width=`${this.size}px`,t.style.height=`${this.size}px`,t.style.border="4px solid #ccc",t.style.borderTop="4px solid #333",t.style.borderRadius="50%",t.style.animation="spin 1s linear infinite",e.appendChild(t),this.container.style.position=this.container===document.body?this.container.style.position:"relative",this.container.appendChild(e),this.spinnerElement=e;let n=document.createElement("style");n.innerHTML=`
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    `,document.head.appendChild(n)}hide(){this.spinnerElement&&(this.container.removeChild(this.spinnerElement),this.spinnerElement=null)}};export{i as a};
