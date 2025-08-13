@@ -1,0 +1,1 @@
+import{Y as r}from"./chunk-RHKCHBCJ.js";var i=class n{transform(e){let t=e.slice(0,3),s=e.slice(e.length-4,e.length-1);return t+"*".repeat(10)+s}static \u0275fac=function(t){return new(t||n)};static \u0275pipe=r({name:"keySecret",type:n,pure:!0,standalone:!1})};export{i as a};
